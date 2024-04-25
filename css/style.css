@@ -16,17 +16,45 @@ header {
     background-color: #00001d;
 }
 
-.navbar-toggler {
-    margin: 20px 20px 0 0;
-    box-shadow: 0 0 5px #e1e2e691;
-    
+@media (max-width: 992px) {
+    .nav-item{
+        margin-right: 300px;
+    }
+    }
+
+
+.offcanvas-body {
+    margin-left: auto;
 }
+
+#navbar-alineacion {
+    padding-bottom: 90px;
+}
+
+.navbar-toggler{
+    box-shadow: 0 0 5px #e1e2e691;
+}
+
+#toggler-alineacion-hamburguesa {
+    margin-bottom: 100px;
+}
+
+/*Estilos par LI*/
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 20px;
+    padding-top: 10px;
+    text-shadow: 0 0 4px #eee9ddcb;
+    letter-spacing: 1.5px;
+}
+
 
 .contenedor-logo img {
     width: 180px;
     filter: drop-shadow(0 0 20px #ffffff);
     position: relative;
     bottom: 30px;
+    z-index: 2;
 }
 
 .contenedor-fondo {
@@ -35,8 +63,10 @@ header {
     background-repeat: no-repeat;
     overflow: hidden;
     height: 750px;
-    width: 100%;
+    min-width: 100vw;
     object-fit: cover;
+    position: relative;
+
 }
 
 .capa {
@@ -74,7 +104,6 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.308)
-
 }
 
 
@@ -99,19 +128,6 @@ padding-top: 0;
 background-color: #33334d;
 }
 
-.h1-especial {
-        margin-bottom: 0;
-        color: #b3b4b8;
-        text-shadow: 0 0 5px #757688;
-        font-size: 24px;
-        font-weight: 700;
-        text-align: center;
-        padding: 35px;
-        background-color: #00001d;
-        text-transform: uppercase;
-        border: none;
-       
-}
 
 .h1-especial2 {
     color: #e1e2e6;
@@ -129,6 +145,23 @@ background-color: #33334d;
     z-index: 3;
 }
 
+.h1-especial3 {
+    color: #e1e2e6;
+    text-shadow: 0 0 5px #c0c0c7;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+    padding: 35px;
+    background-color: #00001d;
+    text-transform: uppercase;
+    border: none;
+    position: sticky;
+    top: 0;
+    padding-right: 700px;
+    margin-bottom: 0;
+    z-index: 3;
+    width: 100%;
+}
 h2 {
     color: #ffffff;
     font-size: 26px;
@@ -409,6 +442,7 @@ hr {
     top: 0;
     margin-bottom: 0;
     z-index: 3;
+    padding-right: 900px ;
 }
 
 .contenedor-div{
@@ -840,8 +874,8 @@ footer .footer-redes section a {
 @media only screen and (max-width: 428px) {
 
     .h1-especial2 {
-    font-size: 19.5px;
-    text-align: start;
+        font-size: 19.5px;
+        text-align: start;
     }
 
     .especial-pascua {
