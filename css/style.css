@@ -30,7 +30,7 @@ header {
 }
 
 .contenedor-fondo {
-    background-image: url('images/local/local.jpg');
+    background-image: url("../images/local/local.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -713,6 +713,7 @@ footer .footer-redes section a {
 @media only screen and (max-width: 1200px) {
 
     /*Ubicacion*/
+
     .contenedor-playlist {
         display: flex;
         flex-direction: column;
@@ -777,7 +778,6 @@ footer .footer-redes section a {
 
     /*Fin nosotros*/
 
-
     /* Footer */
 
     footer {
@@ -808,9 +808,8 @@ footer .footer-redes section a {
         text-align: center;
         font-size: 1.4rem;
     }
-
-    /* Fin footer */
 }
+    /* Fin footer */
 
 @media only screen and (max-width: 791px) {
 
@@ -868,8 +867,4 @@ footer .footer-redes section a {
     }
 
 }
-
-
-
-
 
