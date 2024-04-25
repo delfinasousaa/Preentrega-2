@@ -63,7 +63,7 @@ header {
     background-repeat: no-repeat;
     overflow: hidden;
     height: 750px;
-    min-width: 100vw;
+    width: 100%;
     object-fit: cover;
     position: relative;
 
@@ -142,10 +142,11 @@ background-color: #33334d;
     position: sticky;
     top: 0;
     margin-bottom: 0;
+    width: 100%;
     z-index: 3;
 }
 
-.h1-especial3 {
+.h1-especial2 {
     color: #e1e2e6;
     text-shadow: 0 0 5px #c0c0c7;
     font-size: 27px;
@@ -157,11 +158,11 @@ background-color: #33334d;
     border: none;
     position: sticky;
     top: 0;
-    padding-right: 700px;
     margin-bottom: 0;
-    z-index: 3;
     width: 100%;
+    z-index: 3;
 }
+
 h2 {
     color: #ffffff;
     font-size: 26px;
@@ -442,7 +443,6 @@ hr {
     top: 0;
     margin-bottom: 0;
     z-index: 3;
-    padding-right: 900px ;
 }
 
 .contenedor-div{
@@ -845,7 +845,13 @@ footer .footer-redes section a {
 }
     /* Fin footer */
 
-@media only screen and (max-width: 791px) {
+    @media only screen and (max-width:335px) {
+        .section-elemento1 .section-elemento2 .section-elemento3 .section-elemento4 {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 791px) {
 
     /* Productos */
 
